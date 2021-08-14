@@ -19,7 +19,7 @@
 </div>
 
 <div>
-<button (click)="onButtonClick()">Generate</button>
+<button (click)="onButtonClick()" [disabled]="!(length && (changeletter || changenumber || changesymbols))">Generate</button>
 </div>
 
 <div>
